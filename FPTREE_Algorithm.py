@@ -121,7 +121,9 @@ def Mine_Tree(FPTree, HeaderTable, minSupport, prefix, frequent_itemset):
             Mine_Tree(Conditional_FPTree, Conditional_header, minSupport, new_frequentset, frequent_itemset)
 
 #to take input of filename and minimum support
+print("Enter the filename:")
 filename = input()
+print("Enter the minimum support count:")
 min_Support = int(input())
 
 initSet = create_initialset(Load_data(filename))
